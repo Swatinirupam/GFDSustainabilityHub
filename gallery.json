@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "school": "GEMS Founders School Dubai South",
+    "description": "Curated showcase of student sustainability outcomes. This gallery collects NO personal data. Items are added only by staff, editing this file and placing an image in the /gallery-images/ folder. Show the WORK, not the child. Label by year group and SDG only, never by name.",
+    "privacyNote": "Work is shared with school permission. No personal data is collected on this site.",
+    "howToAddAnItem": "1) Save the image into /gallery-images/  2) Add a new object below with its title, yearGroup, sdg, image path, and caption  3) Save the file — the website updates automatically."
+  },
+  "gallery": [
+    {
+      "title": "Recycled Materials Sculpture",
+      "yearGroup": "Year 2",
+      "sdg": 12,
+      "image": "gallery-images/y2-recycled-sculpture.jpg",
+      "caption": "A sculpture built entirely from classroom waste, exploring how rubbish can become something new."
+    },
+    {
+      "title": "Save Our Seas Poster",
+      "yearGroup": "Year 2",
+      "sdg": 14,
+      "image": "gallery-images/y2-ocean-poster.jpg",
+      "caption": "A pupil-designed awareness poster asking families to cut down on single-use plastic."
+    },
+    {
+      "title": "School Vegetable Harvest",
+      "yearGroup": "Year 3",
+      "sdg": 2,
+      "image": "gallery-images/y3-veg-harvest.jpg",
+      "caption": "The first harvest from our school garden, grown and cared for by the class."
+    },
+    {
+      "title": "Solar Model Prototype",
+      "yearGroup": "Year 4",
+      "sdg": 7,
+      "image": "gallery-images/y4-solar-model.jpg",
+      "caption": "A working solar-powered model demonstrating how clean energy can move a vehicle."
+    },
+    {
+      "title": "Water Filtration Design",
+      "yearGroup": "Year 5",
+      "sdg": 6,
+      "image": "gallery-images/y5-water-filter.jpg",
+      "caption": "A student-engineered filter, refined over several iterations to clean cloudy water."
+    },
+    {
+      "title": "Upcycled Product Prototype",
+      "yearGroup": "Year 6",
+      "sdg": 12,
+      "image": "gallery-images/y6-upcycle-prototype.jpg",
+      "caption": "A discarded object redesigned into something genuinely useful, with the design thinking on display."
+    },
+    {
+      "title": "Greener School Proposal",
+      "yearGroup": "Year 7",
+      "sdg": 11,
+      "image": "gallery-images/y7-greener-school.jpg",
+      "caption": "A design-thinking pitch board proposing a realistic sustainability improvement for the school site."
+    },
+    {
+      "title": "Fast Fashion Campaign Board",
+      "yearGroup": "Year 8",
+      "sdg": 12,
+      "image": "gallery-images/y8-fast-fashion.jpg",
+      "caption": "A campaign exploring the true lifecycle cost of a single garment."
+    },
+    {
+      "title": "Carbon Footprint Data Display",
+      "yearGroup": "Year 9",
+      "sdg": 13,
+      "image": "gallery-images/y9-carbon-data.jpg",
+      "caption": "Student-collected data visualised to argue for practical changes at home and school."
+    },
+    {
+      "title": "Renewable Energy Rig",
+      "yearGroup": "Year 10",
+      "sdg": 7,
+      "image": "gallery-images/y10-renewable-rig.jpg",
+      "caption": "A small-scale wind and solar test rig built and evaluated for efficiency."
+    },
+    {
+      "title": "Sustainable Enterprise Stall",
+      "yearGroup": "Year 11",
+      "sdg": 8,
+      "image": "gallery-images/y11-enterprise-stall.jpg",
+      "caption": "A student enterprise product designed around sustainable materials and fair value."
+    },
+    {
+      "title": "Smart City Concept Model",
+      "yearGroup": "Year 12",
+      "sdg": 11,
+      "image": "gallery-images/y12-smart-city.jpg",
+      "caption": "A concept model showing how data and AI could make a city more sustainable, with ethical trade-offs noted."
+    },
+    {
+      "title": "Peer Mentoring Lesson Resource",
+      "yearGroup": "Year 13",
+      "sdg": 4,
+      "image": "gallery-images/y13-peer-lesson.jpg",
+      "caption": "A sustainability lesson resource created by sixth-form students to teach younger year groups."
+    }
+  ]
+}

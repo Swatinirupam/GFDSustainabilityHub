@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustainability at GEMS Founders School Dubai South</title>
+<meta name="description" content="How primary and secondary students at GEMS Founders School Dubai South take action on the UN Sustainable Development Goals, year by year.">
+<link rel="icon" href="images/GFD_shield.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#003371; --red:#B1171D; --grey:#898B8E; --white:#fff;
+    --ink:#13233f; --muted:#5a6472; --bg-soft:#f4f6fa; --line:#e3e8ef;
+    --shadow:0 1px 2px rgba(19,35,63,.06),0 8px 24px rgba(19,35,63,.06);
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.1;margin:0}
+  a{color:var(--navy)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  :focus-visible{outline:3px solid var(--red);outline-offset:2px;border-radius:6px}
+
+  /* Header */
+  header.site{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;border-bottom:3px solid var(--red)}
+  .bar{display:flex;align-items:center;gap:18px;padding:12px 0}
+  .logo-chip{background:#fff;border-radius:12px;padding:6px 10px;display:flex;align-items:center;box-shadow:var(--shadow);flex:none}
+  .logo-chip img{height:46px;width:auto;display:block}
+  .brand{display:flex;flex-direction:column}
+  .brand .k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#aebfe0}
+  .brand .t{font-family:'Fraunces',serif;font-weight:600;font-size:1.12rem}
+  nav.main{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+  nav.main a{color:#dce4f5;text-decoration:none;font-size:.92rem;font-weight:500;padding:8px 12px;border-radius:9px}
+  nav.main a:hover{background:rgba(255,255,255,.12);color:#fff}
+
+  /* Hero */
+  .hero{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%);padding:64px 0 48px;border-bottom:1px solid var(--line)}
+  .eyebrow{color:var(--red);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:900;color:var(--navy);max-width:16ch}
+  .hero p.lead{font-size:1.18rem;color:var(--muted);max-width:60ch;margin:18px 0 0}
+
+  /* SDG grid signature */
+  .sdg-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:40px 0 14px;flex-wrap:wrap}
+  .sdg-head h2{font-size:1.5rem;color:var(--navy)}
+  .sdg-head p{margin:0;color:var(--muted);font-size:.95rem}
+  .sdg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:10px}
+  .sdg-tile{border:none;cursor:pointer;color:#fff;border-radius:12px;padding:12px 10px;min-height:84px;display:flex;flex-direction:column;justify-content:space-between;text-align:left;font-family:'Inter';box-shadow:var(--shadow);transition:transform .12s ease}
+  .sdg-tile:hover{transform:translateY(-3px)}
+  .sdg-tile .n{font-family:'Fraunces';font-weight:900;font-size:1.5rem;line-height:1}
+  .sdg-tile .l{font-size:.66rem;font-weight:600;line-height:1.15;opacity:.97}
+  .sdg-tile[aria-pressed="true"]{outline:4px solid var(--ink);outline-offset:2px}
+
+  /* Sections */
+  section.block{padding:56px 0}
+  section.block.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-title{font-size:1.9rem;color:var(--navy);margin-bottom:8px}
+  .sec-sub{color:var(--muted);margin:0 0 26px;max-width:60ch}
+
+  /* Filters */
+  .filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+  .toggle{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px;box-shadow:var(--shadow)}
+  .toggle button{border:none;background:none;font:inherit;font-weight:600;font-size:.9rem;color:var(--muted);padding:8px 18px;border-radius:999px;cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:var(--navy);color:#fff}
+  .chip-clear{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-weight:600;font-size:.88rem;color:var(--navy);cursor:pointer}
+  .active-filter{font-size:.9rem;color:var(--muted)}
+  .active-filter b{color:var(--red)}
+
+  /* Cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}
+  .card .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .yg{background:var(--navy);color:#fff;font-size:.74rem;font-weight:600;padding:4px 10px;border-radius:999px}
+  .term{background:#eef1f6;color:var(--muted);font-size:.74rem;font-weight:600;padding:4px 10px;border-radius:999px}
+  .sdg-badge{color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px}
+  .card h3{font-size:1.18rem;color:var(--navy)}
+  .card p{margin:0;color:var(--ink);font-size:.96rem}
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px;border:1px dashed var(--line);border-radius:var(--radius)}
+
+  /* Gallery */
+  .gcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .gcard .imgwrap{aspect-ratio:4/3;background:var(--navy);position:relative;display:flex;align-items:center;justify-content:center}
+  .gcard .imgwrap img{width:100%;height:100%;object-fit:cover}
+  .gcard .ph{color:#fff;text-align:center;padding:16px}
+  .gcard .ph .pn{font-family:'Fraunces';font-weight:900;font-size:2rem}
+  .gcard .ph .pt{font-size:.8rem;opacity:.85;margin-top:4px}
+  .gcard .body{padding:18px;display:flex;flex-direction:column;gap:10px}
+  .gcard h3{font-size:1.05rem;color:var(--navy)}
+  .gcard p{margin:0;font-size:.9rem;color:var(--muted)}
+
+  /* Get involved */
+  .involve{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .involve .card h3{font-size:1.1rem}
+
+  /* Footer */
+  footer.site{background:var(--navy);color:#cfd9ee;padding:40px 0;border-top:3px solid var(--red)}
+  footer.site .cols{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer.site strong{color:#fff}
+  .privacy{font-size:.9rem;max-width:52ch}
+  .privacy .lock{color:#fff;font-weight:700}
+
+  @media (max-width:640px){
+    nav.main{display:none}
+    .hero{padding:44px 0 32px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important}
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <span class="logo-chip"><img src="images/GFD_shield.png" alt="GEMS Founders School Dubai South crest"></span>
+    <span class="brand">
+      <span class="k">GEMS Founders School Dubai South</span>
+      <span class="t">Sustainability Hub</span>
+    </span>
+    <nav class="main" aria-label="Primary">
+      <a href="#years">By Year Group</a>
+      <a href="#explore">Explore by SDG</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#involved">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">United Nations Sustainable Development Goals</p>
+      <h1>Small hands and bright minds, taking real action.</h1>
+      <p class="lead">From Year 1 to Year 13, our students learn what it means to look after their world &mdash; and then they do something about it. Explore our sustainability work, year by year and goal by goal.</p>
+
+      <div class="sdg-head" id="explore">
+        <h2>Explore by Goal</h2>
+        <p>Tap a goal to see every activity linked to it.</p>
+      </div>
+      <div class="sdg-grid" id="sdgGrid" role="group" aria-label="Filter activities by Sustainable Development Goal"></div>
+    </div>
+  </section>
+
+  <section class="block" id="years">
+    <div class="wrap">
+      <h2 class="sec-title">Our Journey by Year Group</h2>
+      <p class="sec-sub">Every year group takes part. Switch between phases, or filter by a goal above, to see what our students have been doing.</p>
+      <div class="filters">
+        <div class="toggle" role="group" aria-label="Choose phase">
+          <button data-phase="All" aria-pressed="true">All</button>
+          <button data-phase="Primary" aria-pressed="false">Primary</button>
+          <button data-phase="Secondary" aria-pressed="false">Secondary</button>
+        </div>
+        <span class="active-filter" id="activeFilter" aria-live="polite"></span>
+        <button class="chip-clear" id="clearBtn" hidden>Clear goal filter</button>
+      </div>
+      <div class="grid" id="activityGrid"></div>
+    </div>
+  </section>
+
+  <section class="block alt" id="gallery">
+    <div class="wrap">
+      <h2 class="sec-title">Sustainability Gallery</h2>
+      <p class="sec-sub">A curated showcase of student outcomes &mdash; posters, projects, models and campaigns. We celebrate the work and the year group, never individual names.</p>
+      <div class="grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="involved">
+    <div class="wrap">
+      <h2 class="sec-title">Get Involved</h2>
+      <p class="sec-sub">Sustainability is a team effort. Here is how our whole community keeps it going.</p>
+      <div class="involve">
+        <div class="card"><h3>For students</h3><p>Bring your ideas to your class eco-lead. The best projects start with a question you genuinely care about.</p></div>
+        <div class="card"><h3>For families</h3><p>Ask your child what goal their class is working on this term &mdash; and try one small change together at home.</p></div>
+        <div class="card"><h3>For staff</h3><p>Add a new activity or gallery item by editing the site's data files. No coding needed &mdash; see the maintenance guide in the project.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div class="privacy">
+      <strong>Sustainability at GEMS Founders School Dubai South</strong><br>
+      <span class="lock">&#128274; This site collects no personal data.</span> Student work is shared with school permission and shown by year group only. No names, logins or uploads.
+    </div>
+    <div class="privacy">
+      Mapped to the 17 UN Sustainable Development Goals.<br>Built and maintained by our school community.
+    </div>
+  </div>
+</footer>
+
+<script id="fallback-data" type="application/json">{"activities": [{"yearGroup": "Year 1", "phase": "Primary", "sdg": 15, "title": "Our Little Garden", "outcome": "Children plant and care for a classroom herb garden, learning that living things need care and that we share our world with plants and minibeasts.", "term": "Autumn"}, {"yearGroup": "Year 1", "phase": "Primary", "sdg": 6, "title": "Every Drop Counts", "outcome": "Pupils explore where water comes from and practise simple ways to save it, such as turning off the tap while brushing teeth.", "term": "Spring"}, {"yearGroup": "Year 2", "phase": "Primary", "sdg": 11, "title": "Sorting Superheroes", "outcome": "Children learn to sort classroom waste into recycling streams and understand why keeping our school tidy helps our community.", "term": "Autumn"}, {"yearGroup": "Year 2", "phase": "Primary", "sdg": 14, "title": "Save Our Seas", "outcome": "Pupils discover how litter reaches the ocean and design posters encouraging their families to reduce single-use plastic.", "term": "Summer"}, {"yearGroup": "Year 3", "phase": "Primary", "sdg": 2, "title": "From Seed to Snack", "outcome": "Pupils grow vegetables in the school garden and track their growth, connecting healthy eating with where food comes from.", "term": "Spring"}, {"yearGroup": "Year 3", "phase": "Primary", "sdg": 12, "title": "Waste Warriors", "outcome": "Children audit the waste their class produces in a week and set a simple, measurable target to reduce it.", "term": "Autumn"}, {"yearGroup": "Year 4", "phase": "Primary", "sdg": 7, "title": "Sunshine to Power", "outcome": "Pupils build and test a simple solar-powered model, exploring how clean energy works and why it matters for the planet.", "term": "Summer"}, {"yearGroup": "Year 4", "phase": "Primary", "sdg": 13, "title": "Weather Watchers", "outcome": "Children record daily weather and discuss how the climate is changing, then agree on one class action to reduce their carbon footprint.", "term": "Autumn"}, {"yearGroup": "Year 5", "phase": "Primary", "sdg": 6, "title": "Clean Water Engineers", "outcome": "Using a design-thinking process, pupils build and refine water-filtration devices, learning through iteration why access to clean water is a global challenge.", "term": "Spring"}, {"yearGroup": "Year 5", "phase": "Primary", "sdg": 3, "title": "Well-being Champions", "outcome": "Pupils design a whole-class well-being routine and reflect on how physical activity and rest support healthy learning.", "term": "Summer"}, {"yearGroup": "Year 6", "phase": "Primary", "sdg": 12, "title": "Upcycle Innovators", "outcome": "Pupils redesign a discarded object into something useful, presenting their prototype and explaining the responsible-consumption thinking behind it.", "term": "Autumn"}, {"yearGroup": "Year 6", "phase": "Primary", "sdg": 4, "title": "Reading Buddies", "outcome": "Year 6 pupils lead reading sessions with younger children, exploring how quality education is something we can help share.", "term": "Spring"}, {"yearGroup": "Year 7", "phase": "Secondary", "sdg": 11, "title": "Designing a Greener School", "outcome": "Students use design thinking to map problems in their school environment and pitch a realistic sustainability improvement to staff.", "term": "Autumn"}, {"yearGroup": "Year 7", "phase": "Secondary", "sdg": 15, "title": "Biodiversity Survey", "outcome": "Students survey plant and insect life on the school grounds, collecting simple data to argue for a wildlife-friendly area.", "term": "Summer"}, {"yearGroup": "Year 8", "phase": "Secondary", "sdg": 12, "title": "The True Cost of Fast Fashion", "outcome": "Students investigate the lifecycle of a garment and create a campaign encouraging more responsible consumption choices.", "term": "Spring"}, {"yearGroup": "Year 8", "phase": "Secondary", "sdg": 14, "title": "Microplastics Investigation", "outcome": "Students run a practical enquiry into microplastics and communicate their findings to raise awareness about ocean health.", "term": "Autumn"}, {"yearGroup": "Year 9", "phase": "Secondary", "sdg": 13, "title": "Our Carbon Footprint in Data", "outcome": "Students collect and analyse data on their own carbon footprint, using data-driven decision-making to propose changes at home and school.", "term": "Autumn"}, {"yearGroup": "Year 9", "phase": "Secondary", "sdg": 9, "title": "Innovation for Good", "outcome": "Working in teams, students prototype a technology-based solution to a local sustainability challenge and evaluate its impact.", "term": "Summer"}, {"yearGroup": "Year 10", "phase": "Secondary", "sdg": 7, "title": "Renewable Energy Engineering", "outcome": "Students design, build and test small-scale renewable energy systems, evaluating efficiency and real-world viability.", "term": "Spring"}, {"yearGroup": "Year 10", "phase": "Secondary", "sdg": 3, "title": "Mind Matters Campaign", "outcome": "Students lead a peer mental-health awareness campaign, learning how well-being underpins a healthy school community.", "term": "Autumn"}, {"yearGroup": "Year 11", "phase": "Secondary", "sdg": 8, "title": "Sustainable Enterprise Challenge", "outcome": "Students create a small enterprise built on sustainable principles, balancing profit with social and environmental responsibility.", "term": "Autumn"}, {"yearGroup": "Year 11", "phase": "Secondary", "sdg": 13, "title": "Climate Data Analysts", "outcome": "Students interrogate real climate datasets and present evidence-based recommendations to the school leadership team.", "term": "Spring"}, {"yearGroup": "Year 12", "phase": "Secondary", "sdg": 11, "title": "Smart, Sustainable Cities", "outcome": "Students explore how AI and data can make cities more sustainable, producing a critical proposal that weighs benefits against ethical concerns.", "term": "Autumn"}, {"yearGroup": "Year 12", "phase": "Secondary", "sdg": 17, "title": "Community Partnerships Project", "outcome": "Students partner with a local organisation on a sustainability initiative, learning that lasting change relies on collaboration.", "term": "Spring"}, {"yearGroup": "Year 13", "phase": "Secondary", "sdg": 4, "title": "Peer Sustainability Mentors", "outcome": "Students design and deliver sustainability lessons to younger year groups, developing leadership while spreading quality education.", "term": "Autumn"}, {"yearGroup": "Year 13", "phase": "Secondary", "sdg": 16, "title": "Youth Voice Forum", "outcome": "Students research a sustainability policy issue and present a reasoned position at a student forum, practising evidence-based advocacy.", "term": "Spring"}], "gallery": [{"title": "Recycled Materials Sculpture", "yearGroup": "Year 2", "sdg": 12, "image": "gallery-images/y2-recycled-sculpture.jpg", "caption": "A sculpture built entirely from classroom waste, exploring how rubbish can become something new."}, {"title": "Save Our Seas Poster", "yearGroup": "Year 2", "sdg": 14, "image": "gallery-images/y2-ocean-poster.jpg", "caption": "A pupil-designed awareness poster asking families to cut down on single-use plastic."}, {"title": "School Vegetable Harvest", "yearGroup": "Year 3", "sdg": 2, "image": "gallery-images/y3-veg-harvest.jpg", "caption": "The first harvest from our school garden, grown and cared for by the class."}, {"title": "Solar Model Prototype", "yearGroup": "Year 4", "sdg": 7, "image": "gallery-images/y4-solar-model.jpg", "caption": "A working solar-powered model demonstrating how clean energy can move a vehicle."}, {"title": "Water Filtration Design", "yearGroup": "Year 5", "sdg": 6, "image": "gallery-images/y5-water-filter.jpg", "caption": "A student-engineered filter, refined over several iterations to clean cloudy water."}, {"title": "Upcycled Product Prototype", "yearGroup": "Year 6", "sdg": 12, "image": "gallery-images/y6-upcycle-prototype.jpg", "caption": "A discarded object redesigned into something genuinely useful, with the design thinking on display."}, {"title": "Greener School Proposal", "yearGroup": "Year 7", "sdg": 11, "image": "gallery-images/y7-greener-school.jpg", "caption": "A design-thinking pitch board proposing a realistic sustainability improvement for the school site."}, {"title": "Fast Fashion Campaign Board", "yearGroup": "Year 8", "sdg": 12, "image": "gallery-images/y8-fast-fashion.jpg", "caption": "A campaign exploring the true lifecycle cost of a single garment."}, {"title": "Carbon Footprint Data Display", "yearGroup": "Year 9", "sdg": 13, "image": "gallery-images/y9-carbon-data.jpg", "caption": "Student-collected data visualised to argue for practical changes at home and school."}, {"title": "Renewable Energy Rig", "yearGroup": "Year 10", "sdg": 7, "image": "gallery-images/y10-renewable-rig.jpg", "caption": "A small-scale wind and solar test rig built and evaluated for efficiency."}, {"title": "Sustainable Enterprise Stall", "yearGroup": "Year 11", "sdg": 8, "image": "gallery-images/y11-enterprise-stall.jpg", "caption": "A student enterprise product designed around sustainable materials and fair value."}, {"title": "Smart City Concept Model", "yearGroup": "Year 12", "sdg": 11, "image": "gallery-images/y12-smart-city.jpg", "caption": "A concept model showing how data and AI could make a city more sustainable, with ethical trade-offs noted."}, {"title": "Peer Mentoring Lesson Resource", "yearGroup": "Year 13", "sdg": 4, "image": "gallery-images/y13-peer-lesson.jpg", "caption": "A sustainability lesson resource created by sixth-form students to teach younger year groups."}]}</script>
+<script>
+const SDG = {
+ 1:{n:"No Poverty",c:"#E5243B"},2:{n:"Zero Hunger",c:"#DDA63A"},3:{n:"Good Health & Well-being",c:"#4C9F38"},
+ 4:{n:"Quality Education",c:"#C5192D"},5:{n:"Gender Equality",c:"#FF3A21"},6:{n:"Clean Water & Sanitation",c:"#26BDE2"},
+ 7:{n:"Affordable & Clean Energy",c:"#FCC30B"},8:{n:"Decent Work & Growth",c:"#A21942"},9:{n:"Industry & Innovation",c:"#FD6925"},
+ 10:{n:"Reduced Inequalities",c:"#DD1367"},11:{n:"Sustainable Cities",c:"#FD9D24"},12:{n:"Responsible Consumption",c:"#BF8B2E"},
+ 13:{n:"Climate Action",c:"#3F7E44"},14:{n:"Life Below Water",c:"#0A97D9"},15:{n:"Life on Land",c:"#56C02B"},
+ 16:{n:"Peace & Justice",c:"#00689D"},17:{n:"Partnerships",c:"#19486A"}
+};
+
+let DATA={activities:[],gallery:[]};
+let phase="All", sdgFilter=null;
+
+async function load(){
+  try{
+    const [a,g]=await Promise.all([
+      fetch("data/activities.json").then(r=>{if(!r.ok)throw 0;return r.json()}),
+      fetch("data/gallery.json").then(r=>{if(!r.ok)throw 0;return r.json()})
+    ]);
+    DATA={activities:a.activities,gallery:g.gallery};
+  }catch(e){
+    const fb=JSON.parse(document.getElementById("fallback-data").textContent);
+    DATA={activities:fb.activities,gallery:fb.gallery};
+  }
+  buildSdgGrid(); renderActivities(); renderGallery();
+}
+
+function usedSdgs(){return [...new Set(DATA.activities.map(a=>a.sdg))].sort((x,y)=>x-y);}
+
+function buildSdgGrid(){
+  const grid=document.getElementById("sdgGrid");
+  grid.innerHTML="";
+  usedSdgs().forEach(id=>{
+    const s=SDG[id];
+    const b=document.createElement("button");
+    b.className="sdg-tile"; b.style.background=s.c; b.setAttribute("aria-pressed","false");
+    b.setAttribute("aria-label","Goal "+id+": "+s.n);
+    b.innerHTML='<span class="n">'+id+'</span><span class="l">'+s.n+'</span>';
+    b.onclick=()=>{ sdgFilter = (sdgFilter===id?null:id); syncSdg(); renderActivities();
+      document.getElementById("years").scrollIntoView({behavior:"smooth",block:"start"}); };
+    grid.appendChild(b);
+  });
+}
+function syncSdg(){
+  document.querySelectorAll(".sdg-tile").forEach(t=>{
+    const id=+t.querySelector(".n").textContent;
+    t.setAttribute("aria-pressed", id===sdgFilter?"true":"false");
+  });
+  const af=document.getElementById("activeFilter"), cb=document.getElementById("clearBtn");
+  if(sdgFilter){af.innerHTML="Showing <b>Goal "+sdgFilter+": "+SDG[sdgFilter].n+"</b>"; cb.hidden=false;}
+  else{af.textContent=""; cb.hidden=true;}
+}
+
+function renderActivities(){
+  const grid=document.getElementById("activityGrid");
+  let items=DATA.activities.filter(a=>(phase==="All"||a.phase===phase)&&(!sdgFilter||a.sdg===sdgFilter));
+  const order=n=>parseInt(n.replace(/\D/g,''),10);
+  items.sort((a,b)=>(a.phase===b.phase?order(a.yearGroup)-order(b.yearGroup):(a.phase==="Primary"?-1:1)));
+  if(!items.length){grid.innerHTML='<div class="empty">No activities match this filter yet. Try another goal or phase.</div>';return;}
+  grid.innerHTML=items.map(a=>{
+    const s=SDG[a.sdg];
+    return '<article class="card"><div class="meta">'
+      +'<span class="yg">'+a.yearGroup+'</span>'
+      +(a.term?'<span class="term">'+a.term+'</span>':'')
+      +'<span class="sdg-badge" style="background:'+s.c+'">SDG '+a.sdg+'</span></div>'
+      +'<h3>'+a.title+'</h3><p>'+a.outcome+'</p></article>';
+  }).join("");
+}
+
+function renderGallery(){
+  const grid=document.getElementById("galleryGrid");
+  if(!DATA.gallery.length){grid.innerHTML='<div class="empty">Gallery items will appear here soon.</div>';return;}
+  grid.innerHTML=DATA.gallery.map(g=>{
+    const s=SDG[g.sdg];
+    const ph='<div class="ph"><div class="pn">SDG '+g.sdg+'</div><div class="pt">Photo coming soon</div></div>';
+    const img='<img src="'+g.image+'" alt="'+g.title+' &ndash; '+g.yearGroup+' work" loading="lazy" onerror="this.parentNode.innerHTML=\''+ph.replace(/'/g,"&#39;")+'\'">';
+    return '<article class="gcard"><div class="imgwrap" style="background:'+s.c+'">'+img+'</div>'
+      +'<div class="body"><div class="meta"><span class="yg">'+g.yearGroup+'</span>'
+      +'<span class="sdg-badge" style="background:'+s.c+'">SDG '+g.sdg+'</span></div>'
+      +'<h3>'+g.title+'</h3><p>'+g.caption+'</p></div></article>';
+  }).join("");
+}
+
+document.querySelectorAll(".toggle button").forEach(btn=>{
+  btn.onclick=()=>{
+    phase=btn.dataset.phase;
+    document.querySelectorAll(".toggle button").forEach(b=>b.setAttribute("aria-pressed",b===btn?"true":"false"));
+    renderActivities();
+  };
+});
+document.getElementById("clearBtn").onclick=()=>{sdgFilter=null;syncSdg();renderActivities();};
+
+load();
+</script>
+</body>
+</html>

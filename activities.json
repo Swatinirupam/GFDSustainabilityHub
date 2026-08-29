@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "school": "GEMS Founders School Dubai South",
+    "description": "Year-wise sustainability activities mapped to the UN Sustainable Development Goals. Edit this file to add, remove, or update activities. Each activity renders automatically on the website.",
+    "sdgReference": {
+      "1": "No Poverty",
+      "2": "Zero Hunger",
+      "3": "Good Health and Well-being",
+      "4": "Quality Education",
+      "5": "Gender Equality",
+      "6": "Clean Water and Sanitation",
+      "7": "Affordable and Clean Energy",
+      "8": "Decent Work and Economic Growth",
+      "9": "Industry, Innovation and Infrastructure",
+      "10": "Reduced Inequalities",
+      "11": "Sustainable Cities and Communities",
+      "12": "Responsible Consumption and Production",
+      "13": "Climate Action",
+      "14": "Life Below Water",
+      "15": "Life on Land",
+      "16": "Peace, Justice and Strong Institutions",
+      "17": "Partnerships for the Goals"
+    }
+  },
+  "activities": [
+    {
+      "yearGroup": "Year 1",
+      "phase": "Primary",
+      "sdg": 15,
+      "title": "Our Little Garden",
+      "outcome": "Children plant and care for a classroom herb garden, learning that living things need care and that we share our world with plants and minibeasts.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 1",
+      "phase": "Primary",
+      "sdg": 6,
+      "title": "Every Drop Counts",
+      "outcome": "Pupils explore where water comes from and practise simple ways to save it, such as turning off the tap while brushing teeth.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 2",
+      "phase": "Primary",
+      "sdg": 11,
+      "title": "Sorting Superheroes",
+      "outcome": "Children learn to sort classroom waste into recycling streams and understand why keeping our school tidy helps our community.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 2",
+      "phase": "Primary",
+      "sdg": 14,
+      "title": "Save Our Seas",
+      "outcome": "Pupils discover how litter reaches the ocean and design posters encouraging their families to reduce single-use plastic.",
+      "term": "Summer"
+    },
+    {
+      "yearGroup": "Year 3",
+      "phase": "Primary",
+      "sdg": 2,
+      "title": "From Seed to Snack",
+      "outcome": "Pupils grow vegetables in the school garden and track their growth, connecting healthy eating with where food comes from.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 3",
+      "phase": "Primary",
+      "sdg": 12,
+      "title": "Waste Warriors",
+      "outcome": "Children audit the waste their class produces in a week and set a simple, measurable target to reduce it.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 4",
+      "phase": "Primary",
+      "sdg": 7,
+      "title": "Sunshine to Power",
+      "outcome": "Pupils build and test a simple solar-powered model, exploring how clean energy works and why it matters for the planet.",
+      "term": "Summer"
+    },
+    {
+      "yearGroup": "Year 4",
+      "phase": "Primary",
+      "sdg": 13,
+      "title": "Weather Watchers",
+      "outcome": "Children record daily weather and discuss how the climate is changing, then agree on one class action to reduce their carbon footprint.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 5",
+      "phase": "Primary",
+      "sdg": 6,
+      "title": "Clean Water Engineers",
+      "outcome": "Using a design-thinking process, pupils build and refine water-filtration devices, learning through iteration why access to clean water is a global challenge.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 5",
+      "phase": "Primary",
+      "sdg": 3,
+      "title": "Well-being Champions",
+      "outcome": "Pupils design a whole-class well-being routine and reflect on how physical activity and rest support healthy learning.",
+      "term": "Summer"
+    },
+    {
+      "yearGroup": "Year 6",
+      "phase": "Primary",
+      "sdg": 12,
+      "title": "Upcycle Innovators",
+      "outcome": "Pupils redesign a discarded object into something useful, presenting their prototype and explaining the responsible-consumption thinking behind it.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 6",
+      "phase": "Primary",
+      "sdg": 4,
+      "title": "Reading Buddies",
+      "outcome": "Year 6 pupils lead reading sessions with younger children, exploring how quality education is something we can help share.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 7",
+      "phase": "Secondary",
+      "sdg": 11,
+      "title": "Designing a Greener School",
+      "outcome": "Students use design thinking to map problems in their school environment and pitch a realistic sustainability improvement to staff.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 7",
+      "phase": "Secondary",
+      "sdg": 15,
+      "title": "Biodiversity Survey",
+      "outcome": "Students survey plant and insect life on the school grounds, collecting simple data to argue for a wildlife-friendly area.",
+      "term": "Summer"
+    },
+    {
+      "yearGroup": "Year 8",
+      "phase": "Secondary",
+      "sdg": 12,
+      "title": "The True Cost of Fast Fashion",
+      "outcome": "Students investigate the lifecycle of a garment and create a campaign encouraging more responsible consumption choices.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 8",
+      "phase": "Secondary",
+      "sdg": 14,
+      "title": "Microplastics Investigation",
+      "outcome": "Students run a practical enquiry into microplastics and communicate their findings to raise awareness about ocean health.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 9",
+      "phase": "Secondary",
+      "sdg": 13,
+      "title": "Our Carbon Footprint in Data",
+      "outcome": "Students collect and analyse data on their own carbon footprint, using data-driven decision-making to propose changes at home and school.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 9",
+      "phase": "Secondary",
+      "sdg": 9,
+      "title": "Innovation for Good",
+      "outcome": "Working in teams, students prototype a technology-based solution to a local sustainability challenge and evaluate its impact.",
+      "term": "Summer"
+    },
+    {
+      "yearGroup": "Year 10",
+      "phase": "Secondary",
+      "sdg": 7,
+      "title": "Renewable Energy Engineering",
+      "outcome": "Students design, build and test small-scale renewable energy systems, evaluating efficiency and real-world viability.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 10",
+      "phase": "Secondary",
+      "sdg": 3,
+      "title": "Mind Matters Campaign",
+      "outcome": "Students lead a peer mental-health awareness campaign, learning how well-being underpins a healthy school community.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 11",
+      "phase": "Secondary",
+      "sdg": 8,
+      "title": "Sustainable Enterprise Challenge",
+      "outcome": "Students create a small enterprise built on sustainable principles, balancing profit with social and environmental responsibility.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 11",
+      "phase": "Secondary",
+      "sdg": 13,
+      "title": "Climate Data Analysts",
+      "outcome": "Students interrogate real climate datasets and present evidence-based recommendations to the school leadership team.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 12",
+      "phase": "Secondary",
+      "sdg": 11,
+      "title": "Smart, Sustainable Cities",
+      "outcome": "Students explore how AI and data can make cities more sustainable, producing a critical proposal that weighs benefits against ethical concerns.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 12",
+      "phase": "Secondary",
+      "sdg": 17,
+      "title": "Community Partnerships Project",
+      "outcome": "Students partner with a local organisation on a sustainability initiative, learning that lasting change relies on collaboration.",
+      "term": "Spring"
+    },
+    {
+      "yearGroup": "Year 13",
+      "phase": "Secondary",
+      "sdg": 4,
+      "title": "Peer Sustainability Mentors",
+      "outcome": "Students design and deliver sustainability lessons to younger year groups, developing leadership while spreading quality education.",
+      "term": "Autumn"
+    },
+    {
+      "yearGroup": "Year 13",
+      "phase": "Secondary",
+      "sdg": 16,
+      "title": "Youth Voice Forum",
+      "outcome": "Students research a sustainability policy issue and present a reasoned position at a student forum, practising evidence-based advocacy.",
+      "term": "Spring"
+    }
+  ]
+}
